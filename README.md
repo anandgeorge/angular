@@ -1,12 +1,12 @@
-Graded Angularjs tutorials
-=======
+Angularjs tutorials
+===================
 
-Set of graded Angularjs tutorials
+Set of graded Angularjs tutorials using Node.js
 
 Requirements
 ============
 
-Node.js
+Node.js v0.10 or later
 
 Running
 =======
