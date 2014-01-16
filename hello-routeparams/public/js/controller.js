@@ -9,7 +9,6 @@ sampleApp.config(['$routeProvider',
       });
 }]);
  
- 
 sampleApp.controller('ShowLangController', function($scope, $routeParams) {
 	$scope.languages = {"English":"Hello World", "German":"Hallo Welt", "French":"Bonjour tout le monde"};
     $scope.lang = $routeParams.lang;
