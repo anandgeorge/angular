@@ -1,0 +1,17 @@
+<html ng-app='myApp'>
+<head>
+</head>
+<body ng-controller="ShowLangController">
+<h4>Hello World in Different Languages</h4>
+<table>
+<div ng-repeat='lang in langs'>
+  <span>{{lang.name}}</span>
+  <span>{{lang.say}}</span>
+  <button ng-click="remove($index)">Remove</button>
+</div>
+
+<script src="js/angular.js"></script>
+<script src="js/controller.js"></script>
+</body>
+</html>
+

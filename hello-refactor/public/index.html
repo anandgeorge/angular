@@ -1,0 +1,31 @@
+<html ng-app='myApp'>
+<head>
+</head>
+<body>
+	<div>
+		<table>
+			<thead>
+			  <tr>
+				<th>Language</th><th>Hello World</th><th></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>English</td><td><a href="#ShowLang/English">show</a></td>
+			  </tr>
+			  <tr>
+				<td>German</td><td><a href="#ShowLang/German">show</a></td>
+			  </tr>
+			  <tr>
+				<td>French</td><td><a href="#ShowLang/French">show</a></td>
+			  </tr>
+			</tbody>
+	  </table>
+	<div>
+	<div ng-view></div>
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html ng-app='myApp'>
+<head>
+</head>
+<body>
+	<div>
+		<div ng-controller="LangController">
+			<form>
+			<label>Language</label> 
+				<input type="text" name="lang" ng-model="lang.name"/>
+			<label>Say</label> 
+				<input type="text" name="say" ng-model="lang.say"/>
+				<input type="button" value="Save" ng-click="saveLang()" />
+			</form>
+		<table>
+		<thead> 
+		<tr>
+			<th>Language</th>
+			<th>Say</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="language in languages">
+			<td>{{ language.name }}</td>
+			<td>{{ language.say }}</td>
+			<td>
+				<a href="#" ng-click="editLang(language)">edit</a> | 
+				<a href="#" ng-click="deleteLang(language)">delete</a>
+			</td>
+		 </tr>
+		</tbody>
+		</table>    
+		</div>
+	<div>
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
+</body>
+</html>
