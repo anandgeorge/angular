@@ -1,0 +1,20 @@
+<html ng-app>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script>
+		function Controller($scope) {
+		  $scope.greeting = { text: 'Hello' };
+		  $scope.isColor = true;	
+		}
+	</script>
+	<style>
+		.hello-color-true {color:blue;}
+	</style>
+</head>
+<body>
+	<div ng-controller="Controller">
+		<input ng-model="greeting.text">
+		<p class='hello-color-{{isColor}}' >{{greeting.text}} World</p>
+	</div>
+</body>
+</html>

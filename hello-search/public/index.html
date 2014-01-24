@@ -1,0 +1,27 @@
+<html ng-app>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script>
+		function Controller($scope) {
+		  $scope.greetings = [
+				{"name" : "French", "say" : "Bonjour tout le monde"},
+				{"name" : "Italian", "say" : "Ciao mondo"},
+				{"name" : "German", "say" : "Hallo Welt"},
+				{"name" : "English", "say" : "Hello World"}
+			]
+		}
+	</script>
+</head>
+<body>
+	<div ng-controller="Controller">
+		Search: <input ng-model="searchText.name">
+		<table>
+			<tr><th>Language</th><th>Say</th></tr>
+			<tr ng-repeat="greeting in greetings | filter:searchText">
+				<td>{{greeting.name}}</td>
+				<td>{{greeting.say}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
