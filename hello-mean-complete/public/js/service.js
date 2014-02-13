@@ -14,8 +14,6 @@ service('LangService', function($http) {
 		console.log(url);
 		return $http.delete(url);
 	}
-
-
 });
 
 

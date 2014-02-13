@@ -1,0 +1,25 @@
+<html ng-app='myApp'>
+<head>
+</head>
+<body>
+	<div ng-controller="ShowAllController">
+		<table>
+			<thead>
+			  <tr>
+				<th>Language</th><th>Hello World</th><th></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr ng-repeat='lang in langs'>
+				<td>{{lang.name}}</td><td>{{lang.say}}</td><td><a href="#ShowLang/{{lang.name}}">show</a></td>
+			  </tr>
+			</tbody>
+		</table>
+	</div>
+	<div ng-view></div>
+	<script src="js/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/service.js"></script>
+	<script src="js/controller.js"></script>
+</body>
+</html>
